@@ -40,6 +40,7 @@ public class Main {
             int productCount = Integer.parseInt(parts[1]);
             // в массиве amount указали, что общее количество введенного продукта изменилось
             basket.addToCart(productNumber, productCount);
+            basket.saveTxt(textFile);
         }
 
         basket.printCart();

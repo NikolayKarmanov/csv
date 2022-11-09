@@ -20,7 +20,6 @@ public class Basket {
     // метод добавления amount штук продукта номер productNum в корзину
     public void addToCart(int productNum, int amount) {
         this.amount[productNum] += amount;
-        saveTxt(new File("basket.txt"));
     }
 
     // метод вывода на экран покупательской корзины
